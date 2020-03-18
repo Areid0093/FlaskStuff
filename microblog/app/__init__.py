@@ -24,10 +24,6 @@ bootstrap = Bootstrap(app)
 moment = Moment(app)
 babel = Babel(app)
 
-@babel.localeselector
-def get_locale():
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
-
 if not app.debug:
     if app.config['MAIL_SERVER']:
         auth = None
@@ -54,5 +50,9 @@ if not app.debug:
 
     app.logger.setLevel(logging.INFO)
     app.logger.info('Microblog startup')
+    
+@babel.localeselector
+def get_locale():
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 from app import routes, models, errors
