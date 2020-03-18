@@ -1,4 +1,4 @@
-2020-03-15 18:04:17,772 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py:1890]
+2020-03-15 18:06:07,931 ERROR: Exception on / [GET] [in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py:1890]
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -33,9 +33,9 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
   File "/Users/alecreid/Desktop/RestApp/FlaskStuff/microblog/app/templates/index.html", line 5, in template
-    <h1>{{ ('Hi, %(username)s!', username=current_user.username) }}</h1>
-jinja2.exceptions.TemplateSyntaxError: expected token ')', got '='
-2020-03-15 18:04:25,404 ERROR: Exception on / [GET] [in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py:1890]
+    <h1>{{ 'Hi, %(username)s!', username=current_user.username }}</h1>
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+2020-03-15 18:06:08,101 ERROR: Exception on / [GET] [in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py:1890]
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -70,10 +70,9 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
   File "/Users/alecreid/Desktop/RestApp/FlaskStuff/microblog/app/templates/index.html", line 5, in template
-    <h1>{{ ('Hi, %(username)s!', username=current_user.username) }}</h1>
-jinja2.exceptions.TemplateSyntaxError: expected token ')', got '='
-2020-03-15 18:06:03,475 INFO: Microblog startup [in /Users/alecreid/Desktop/RestApp/FlaskStuff/microblog/app/__init__.py:45]
-2020-03-15 18:06:06,923 ERROR: Exception on / [GET] [in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py:1890]
+    <h1>{{ 'Hi, %(username)s!', username=current_user.username }}</h1>
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+2020-03-15 18:06:08,265 ERROR: Exception on / [GET] [in /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py:1890]
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()

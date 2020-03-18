@@ -1,5 +1,7 @@
-
-.vscode/settings.json
-microblog/__pycache__
-
-
+.DS_Store
+__pycache__
+venv
+.env
+logs
+app.db
+tests.py
