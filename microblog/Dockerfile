@@ -2,12 +2,14 @@ FROM python:3.6-alpine
 
 RUN adduser -D microblog
 
-WORKDIR C:/Users/Alec/Documents/Development/FlaskStuff/microblog
+WORKDIR /home/microblog
 
 COPY requirements.txt requirements.txt
-RUN python -m venv venv
-RUN venv/bin/pip install -r requirements.txt
-RUN venv/bin/pip install gunicorn
+RUN python -m venv venv --without-pip && source venv/bin/activate && pip install --ignore-installed -r requirements.txt && pip install gunicorn
+# RUN source venv/bin/activate
+# RUN curl https://bootstrap.pypa.io/get-pip.py | python
+# RUN venv/bin/pip install -r requirements.txt
+# RUN venv/bin/pip install gunicorn
 
 COPY app app
 COPY migrations migrations
