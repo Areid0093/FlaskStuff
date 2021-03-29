@@ -60,7 +60,7 @@ pyasn1==0.4.8
 pyasn1-modules==0.2.8
 PyAutoGUI==0.9.48
 PyGetWindow==0.0.8
-Pygments==2.5.2
+Pygments==2.7.4
 PyJWT==1.7.1
 pylint==2.4.4
 pylint-flask==0.6
